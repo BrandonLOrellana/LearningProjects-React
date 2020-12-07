@@ -21,8 +21,8 @@ class App extends Component {
     this.chore       = "";
   }
   render (){
-    const listCreated = this.state.createdChores.map((chore) =>
-      <Chore data={chore}/>
+    const listCreated = this.state.createdChores.map((chore, index) =>
+      <Chore data={chore} key={index}/>
     );
     return(
       <div className="App">
