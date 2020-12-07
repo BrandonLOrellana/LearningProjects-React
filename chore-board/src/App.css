@@ -12,14 +12,15 @@
 }
 
 .Chore{
-  position: absolute;
+  background-color: rgb(36, 58, 93);
+  border-radius:1vw;
+  position: relative;
   margin-left: 5vw;
+  margin-bottom: 2vh;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-bottom: 2vh;
-  border: 2px;
-  border-style: solid;
-  border-color: aqua;
+  padding-top: 0.7vh;
   color: white;
   text-align: left;
   width: 86vw;

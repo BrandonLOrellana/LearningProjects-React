@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <h1>Chore Board<br/><br/></h1>
       <Chore name="Louis" chore="Chore I need to do"/>
+      <Chore name="Liz"   chore="Chore she needs to do"/>
     </div>
   );
 }
