@@ -1,5 +1,14 @@
 import './App.css';
 
+export class chore{
+    constructor(id) {
+        this.id       = id;
+        this.name     = "";
+        this.chore    = "";
+        this.finished = false;
+    }
+  }
+
 function Chore(props) {
     function setFinished(){
         props.data.finished = true;
@@ -12,5 +21,4 @@ function Chore(props) {
         </div>
     );
 }
-
 export default Chore;
