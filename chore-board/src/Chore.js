@@ -1,10 +1,8 @@
 import './App.css';
 
 function Chore(props) {
-    console.log(props);
     function setFinished(){
         props.data.finished = true;
-        console.log(props.data);
     }
     return (
         <div className="Chore">

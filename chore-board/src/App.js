@@ -13,7 +13,8 @@ class App extends Component {
     super(props);
     this.state = {
       createdChores:  [],
-      finishedChores: []
+      active:         [],
+      finished:       []
     }
     this.changeName  = (e)=>{this.name  = e.target.value;};
     this.changeChore = (e)=>{this.chore = e.target.value;};
@@ -21,7 +22,7 @@ class App extends Component {
     this.chore       = "";
   }
   render (){
-    const listCreated = this.state.createdChores.map((chore, index) =>
+    const listCreated = this.state.active.map((chore, index) =>
       <Chore data={chore} key={index}/>
     );
     return(
@@ -47,9 +48,18 @@ class App extends Component {
                 aux.name = this.name;
                 aux.chore = this.chore;
                 let arr = this.state.createdChores;
-                arr.push(aux); 
-                this.setState({createdChores: arr});
-                console.log(this.state.createdChores); 
+                let act = [];
+                let fin = [];
+                arr.push(aux);
+                for(let i in arr){
+                  if(arr[i].finished === false){
+                    act.push(arr[i])
+                  }
+                  else{
+                    fin.push(arr[i])
+                  }
+                }
+                this.setState({createdChores: arr, active: act, finished: fin});
               }
             }>Create Chore</button>
         </div>
