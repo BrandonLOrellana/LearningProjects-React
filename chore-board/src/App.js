@@ -58,7 +58,6 @@ class App extends Component {
           <label>Name </label>
           <input onChange={this.nameChange} className="Input" />
           <br/>
-          <br/>
           <label>Chore </label>
           <input onChange={this.choreChange} className="Input"/>
           <br/>
