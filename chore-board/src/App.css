@@ -1,5 +1,8 @@
-.App {
+body{
   background-color: #282c34;
+  overflow-x: hidden;
+}
+.App {
   color: white;
   text-align: center;
   border: 0px;
@@ -16,6 +19,7 @@
   border-radius:1vw;
   position: relative;
   margin-left: 5vw;
+  margin-right: 5vw;
   margin-bottom: 2vh;
   padding-left: 2vw;
   padding-right: 2vw;
@@ -23,5 +27,5 @@
   padding-top: 0.7vh;
   color: white;
   text-align: left;
-  width: 86vw;
+  width: 84vw;
 }
