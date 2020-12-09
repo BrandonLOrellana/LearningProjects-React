@@ -47,6 +47,12 @@ class App extends Component {
         nextId: this.state.nextId+1
       });
     }
+
+    this.handleEnter = (e) => {
+      if (e.key === 'Enter') {
+        this.submit(e);
+      }
+    };
   }
   render (){
     return(
@@ -56,10 +62,10 @@ class App extends Component {
         <Board list={this.state.active} onChange={this.handleChange}/>
         <div className="Form">
           <label>Name </label>
-          <input onChange={this.nameChange} className="Input" />
+          <input onChange={this.nameChange} onKeyPress={this.handleEnter} className="Input" />
           <br/>
           <label>Chore </label>
-          <input onChange={this.choreChange} className="Input"/>
+          <input onChange={this.choreChange} onKeyPress={this.handleEnter} className="Input"/>
           <br/>
           <br/>
           <button onClick={this.submit} type="button" className="Create">Create</button>
