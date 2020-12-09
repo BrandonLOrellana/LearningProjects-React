@@ -20,6 +20,21 @@ class App extends Component {
     this.choreChange = (e) =>{
       this.setState({chore: e.target.value});
     }
+    this.handleChange = (id) =>{
+      let act = this.state.active;
+      let fin = this.state.finished;
+      for(var i in this.state.active){
+        if(act[i].id === id){
+          fin.push(act[i]);
+          act.splice(i, 1);
+          break;
+        }
+      }
+      this.setState({
+        active: act,
+        finished: fin
+      });
+    }
     this.submit = (e) =>{
       let aux = new chore();
       aux.id    = this.state.nextId;
@@ -38,7 +53,7 @@ class App extends Component {
       <div className="App">
         <h1>Chore Board App</h1>
         <br/><br/>
-        <Board list={this.state.active}/>
+        <Board list={this.state.active} onChange={this.handleChange}/>
         <div>
           <label>Name </label>
           <input onChange={this.nameChange}/>
@@ -48,8 +63,7 @@ class App extends Component {
           <br/>
           <button onClick={this.submit} type="button">Create</button>
         </div>
-
-      </div>
+    </div>
     );
   }
 }

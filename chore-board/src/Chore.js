@@ -12,6 +12,7 @@ export class chore{
 function Chore(props) {
     function setFinished(){
         props.data.finished = true;
+        props.onChange(props.data.id);
     }
     return (
         <div className="Chore">

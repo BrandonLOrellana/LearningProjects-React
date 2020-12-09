@@ -8,10 +8,13 @@ class Board extends Component {
       this.state = {
         chores:  props.list
       }
+      this.handleChange = (id)=>{
+        props.onChange(id);
+      };
     }
     render (){
       const listCreated = this.state.chores.map((chore) =>
-        <Chore data={chore} key={chore.id}/>
+        <Chore data={chore} key={chore.id} onChange={this.handleChange}/>
       );
       return(
           <div>
@@ -21,5 +24,4 @@ class Board extends Component {
     }
   }
   
-  export default Board;
-
+export default Board;
