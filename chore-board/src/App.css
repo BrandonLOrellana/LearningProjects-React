@@ -4,6 +4,7 @@ body{
 }
 .App {
   color: white;
+  background-color: #282c34;
   text-align: center;
   border: 0px;
   position: absolute;
@@ -28,4 +29,29 @@ body{
   color: white;
   text-align: left;
   width: 84vw;
+}
+
+.Create{
+  background-color: rgb(49, 81, 131);  
+  border-radius:1vw;
+  border: none;
+  width: 15vw;
+  height: 5vh;
+  color: white;
+  font-size: 20px;
+}
+
+.Form{  
+  font-size: 25px; 
+}
+
+.Input{
+  width:30%;
+  height: 4vh;
+  background-color: #353a44;
+  border: none;
+  border-bottom:2px solid #545c6b;
+  color: white;
+  font-size: 17px;
+  padding-left: 1vw;
 }

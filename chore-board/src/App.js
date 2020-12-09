@@ -54,14 +54,16 @@ class App extends Component {
         <h1>Chore Board App</h1>
         <br/><br/>
         <Board list={this.state.active} onChange={this.handleChange}/>
-        <div>
+        <div className="Form">
           <label>Name </label>
-          <input onChange={this.nameChange}/>
+          <input onChange={this.nameChange} className="Input" />
+          <br/>
           <br/>
           <label>Chore </label>
-          <input onChange={this.choreChange}/>
+          <input onChange={this.choreChange} className="Input"/>
           <br/>
-          <button onClick={this.submit} type="button">Create</button>
+          <br/>
+          <button onClick={this.submit} type="button" className="Create">Create</button>
         </div>
     </div>
     );
