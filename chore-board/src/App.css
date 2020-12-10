@@ -31,28 +31,45 @@ body{
   width: 84vw;
 }
 
+.Finished{
+  background-color: rgb(65, 105, 168);  
+  border-radius:1vw;
+  border: none;
+  width: 10vw;
+  height: 4vh;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 2vh;
+}
+
 .Create{
-  background-color: rgb(49, 81, 131);  
+  background-color: rgb(65, 105, 168);  
   border-radius:1vw;
   border: none;
   width: 15vw;
   height: 5vh;
   color: white;
   font-size: 20px;
+  margin-bottom: 2vh;
 }
 
 .Form{  
-  font-size: 25px; 
+  font-size: 25px;
+  background-color:  #444b58;
+  width: 40%;
+  margin-left: 30vw;
+  border-radius: 5vh;
 }
 
 .Input{
-  width:30%;
+  width:50%;
   height: 4vh;
   background-color: #353a44;
   border: none;
   border-bottom:2px solid #545c6b;
   color: white;
   font-size: 17px;
-  padding-left: 1vw;
+  margin-left: 1vw;
   margin-bottom: 2vh;
+  margin-top: 2vh;
 }

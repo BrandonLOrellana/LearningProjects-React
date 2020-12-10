@@ -18,7 +18,7 @@ function Chore(props) {
         <div className="Chore">
             <h2>{props.data.name}</h2>
             <p>{props.data.chore}</p>
-            <button onClick={setFinished}>Finished</button>
+            <button onClick={setFinished} className="Finished">Finished</button>
         </div>
     );
 }
